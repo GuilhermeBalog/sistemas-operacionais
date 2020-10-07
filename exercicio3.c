@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
     pthread_attr_init(&atributos_da_thread);
 
     /* Inicializa x threads através da função "pthread_create" */
-    for(int i = 0; i < 4; i++) // error: expected identifier or ‘(’ before ‘for’
+    int i;
+    for(i = 0; i < 4; i++) // error: expected identifier or ‘(’ before ‘for’
     {
         pthread_create(&thread_id, &atributos_da_thread, runner, NULL);
     }
@@ -25,6 +26,6 @@ int main(int argc, char *argv[])
 /* Função que será executada pelas threads */
 void *runner(void *param)
 {
-    printf("Hello world %d!\n");
+    printf("Hello world!\n");
     pthread_exit(0);
 }
