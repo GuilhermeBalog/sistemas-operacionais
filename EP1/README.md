@@ -23,20 +23,15 @@ Dependendo da plataforma utilizada, a extensão do arquivo de saída pode variar
 
 Como *output* teremos as seguintes linhas:
 
-```bash
-Hello world!
-Hello world!
-```
+![Compilação e execução do primeiro exercício](exercicio1.png)
 
 Sendo que um dos `printf()` é referente ao processo pai e o outro ao processo filho.
-
-![Compilação e execução do primeiro exercício](exercicio1.png)
 
 ---
 
 ## Exercício 2
 
-Criação de um processo, criação de várias Java threads, “hello world” de todos, finalização
+Criação de um processo, criação de várias Java threads, “hello world” de todos, finalização.
 
 ### Resolução 2
 
@@ -49,9 +44,11 @@ Para compilar é necessário utilizar o comando `javac exercicio2.java` e rodar 
 Como *output* temos as seguintes linhas:
 
 ```bash
+
 Hello world!
 Hello world!
 Hello world!
+
 ```
 
 Por padrão estamos iniciando 3 threads, mas o esse número pode ser alterado passando a quantidade como argumento ao executar o programa. Alguns exemplos:
@@ -60,7 +57,7 @@ Por padrão estamos iniciando 3 threads, mas o esse número pode ser alterado pa
   
   ![Iniciando 10 threads](exercicio2%20-%2010.png)
 
-  É interessante notar que as threads não são finalizadas na mesma ordem em que são iniciadas, por isso os números não estão em sequência
+  É interessante notar que as threads não são finalizadas na mesma ordem em que são iniciadas, por isso os números não estão em ordem.
 
 - **Iniciando 3 threads várias vezes**
 
@@ -72,13 +69,13 @@ Por padrão estamos iniciando 3 threads, mas o esse número pode ser alterado pa
 
   ![Iniciando 1 milhão de threads](exercicio2%20-%201%20milhão.png)
 
-  Como era de se esperar, esse processo foi bem mais demorado e exigiu mais da máquina, inclusive a ventoinha começou rodar mais. O tempo para executar foi de 2 minutos e 41 segundos
+  Como era de se esperar, esse processo foi bem mais demorado e exigiu mais da máquina, inclusive a ventoinha começou rodar mais. O tempo para executar foi de 2 minutos e 41 segundos.
 
 ---
 
 ## Exercício 3
 
-Criação de um processo, criação de várias POSIX threads (código fonte em C ou C++), “hello world” de todos, finalização
+Criação de um processo, criação de várias POSIX threads (código fonte em C ou C++), “hello world” de todos, finalização.
 
 ### Resolução 3
 
@@ -86,17 +83,15 @@ Aqui tivemos uma solução que se parecia muito com a desenvolvida em Java, pore
 
 Uma diferença que foi observada entre o C e o Java é que no C não precisamos iniciar a thread, ao criá-la ela já inicia a execução simultaneamente.
 
-Pra compilar, novamente utilizamos o `gcc`, mas é necessário usar a *flag* `-pthread`
+Pra compilar, novamente utilizamos o `gcc`, mas é necessário usar a *flag* `-pthread`.
 
 Como *output* temos as seguintes linhas:
-
-```bash
-Hello world!
-Hello world!
-Hello world!
-Hello world!
-```
 
 ![Compilação e execução do execução do terceiro exercício](exercicio3.png)
 
 ---
+
+## Referências
+
+- Trabalhando com threads - [https://www.devmedia.com.br/trabalhando-com-threads-em-java/28780](https://www.devmedia.com.br/trabalhando-com-threads-em-java/28780).
+- Livro "Fundamentos de Sistemas Operacionais by Abraham Silberschatz, Peter Baer Galvin, Greg Gagne.", livro texto da disciplina.
