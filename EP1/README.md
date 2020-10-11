@@ -3,6 +3,10 @@
 - Gabriel Hoffman - 10783250
 - Guilherme Balog - 11270649
 
+## Informações gerais
+
+Os programas foram desenvolvidos no Ubuntu 20.04 64 bits. Para implementar os programas utilizamos o [Visual Studio Code](https://code.visualstudio.com/), que é um editor de código open source. Os exercícios em C foram compilados com o compilador `gcc` versão 9.3.0, que já está incluído no Ubuntu por padrão. O exercício em java usa a versão openJDK 11.0.8, que já estava instalada.
+
 ## Exercício 1
 
 Criação de um processo pai, “hello world”, fork processo filho, “hello world”,finalização de ambos. Válida qualquer linguagem de programação.
