@@ -15,7 +15,8 @@ int main(int argc, char *argv[])
     pthread_attr_init(&atributos_da_thread);
 
     /* Inicializa x threads através da função "pthread_create" */
-    for(int i = 0; i < 4; i++)
+    int i;
+    for(i = 0; i < 4; i++)
     {
         pthread_create(&thread_id, &atributos_da_thread, runner, NULL);
     }
