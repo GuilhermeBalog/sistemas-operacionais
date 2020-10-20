@@ -11,3 +11,4 @@ Exercícios-programa (EP) para a matéria de Sistemas Operacionais da EACH-USP
 
 - [Gabriel Hoffman](https://github.com/Hoffmano)
 - [Guilherme Balog](https://github.com/GuilhermeBalog)
+- [Gabriel Hoffman](https://github.com/hoffmano)

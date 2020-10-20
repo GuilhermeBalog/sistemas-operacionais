@@ -13,7 +13,7 @@ int true = 1;
 
 
 /* Função que será executada pelas threads */
-void *thread_1(void * param)
+void *runner_1(void * param)
 {
     int id = 0;
     int other = 1;
@@ -29,7 +29,7 @@ void *thread_1(void * param)
     pthread_exit(NULL);
 }
 
-void *thread_2(void * param)
+void *runner_2(void * param)
 {
     int id = 1;
     int other = 0;
@@ -57,8 +57,8 @@ int main(int argc, char *argv[])
 
     /* Inicializa x threads através da função "pthread_create" */
     
-    pthread_create(&thread_1, NULL, thread_1, NULL);
-    pthread_create(&thread_2, NULL, thread_2, NULL);
+    pthread_create(&thread_1, NULL, runner_1, NULL);
+    pthread_create(&thread_2, NULL, runner_2, NULL);
 
     printf("\n[Fim do programa]\n\n");
 
