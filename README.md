@@ -6,6 +6,7 @@ Exercícios-programa (EP) para a matéria de Sistemas Operacionais da EACH-USP
 
 - [EP 1 - Criando Processos e Threads](./EP1/README.md)
 - [EP 2 - Seção Crítica](./EP2/README.md)
+- [EP 3 - Semáforo Binário](./EP3/README.md)
 
 ## Autores
 
