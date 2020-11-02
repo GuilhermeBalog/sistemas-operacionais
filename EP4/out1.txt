@@ -1,0 +1,75 @@
+Philosopher 0 is thinking.
+Philosopher 1 is thinking.
+Philosopher 3 is thinking.
+Philosopher 4 is thinking.
+Philosopher 2 is thinking.
+[15:47:53] Philosopher 1 start eating.
+[15:47:53] Philosopher 3 start eating.
+[15:47:55] Philosopher 1 end eating.
+Philosopher 1 is thinking.
+[15:47:55] Philosopher 0 start eating.
+[15:47:55] Philosopher 3 end eating.
+[15:47:55] Philosopher 2 start eating.
+Philosopher 3 is thinking.
+[15:48:1] Philosopher 2 end eating.
+Philosopher 2 is thinking.
+[15:48:1] Philosopher 0 end eating.
+[15:48:1] Philosopher 4 start eating.
+Philosopher 0 is thinking.
+[15:48:1] Philosopher 1 start eating.
+[15:48:6] Philosopher 1 end eating.
+Philosopher 1 is thinking.
+[15:48:6] Philosopher 4 end eating.
+Philosopher 4 is thinking.
+[15:48:6] Philosopher 3 start eating.
+[15:48:6] Philosopher 0 start eating.
+[15:48:12] Philosopher 3 end eating.
+Philosopher 3 is thinking.
+[15:48:12] Philosopher 0 end eating.
+[15:48:12] Philosopher 2 start eating.
+[15:48:12] Philosopher 4 start eating.
+Philosopher 0 is thinking.
+[15:48:19] Philosopher 4 end eating.
+Philosopher 4 is thinking.
+[15:48:19] Philosopher 2 end eating.
+Philosopher 2 is thinking.
+[15:48:19] Philosopher 1 start eating.
+[15:48:19] Philosopher 3 start eating.
+[15:48:24] Philosopher 1 end eating.
+Philosopher 1 is thinking.
+[15:48:24] Philosopher 3 end eating.
+[15:48:24] Philosopher 0 start eating.
+[15:48:24] Philosopher 2 start eating.
+Philosopher 3 is thinking.
+[15:48:28] Philosopher 2 end eating.
+Philosopher 2 is thinking.
+[15:48:28] Philosopher 0 end eating.
+[15:48:28] Philosopher 4 start eating.
+Philosopher 0 is thinking.
+[15:48:28] Philosopher 1 start eating.
+[15:48:35] Philosopher 4 end eating.
+Philosopher 4 is thinking.
+[15:48:35] Philosopher 3 start eating.
+[15:48:35] Philosopher 1 end eating.
+Philosopher 1 is thinking.
+[15:48:35] Philosopher 0 start eating.
+[15:48:40] Philosopher 3 end eating.
+Philosopher 3 is thinking.
+[15:48:40] Philosopher 0 end eating.
+Philosopher 0 is thinking.
+[15:48:40] Philosopher 4 start eating.
+[15:48:40] Philosopher 2 start eating.
+[15:48:42] Philosopher 4 end eating.
+Philosopher 4 is thinking.
+[15:48:42] Philosopher 2 end eating.
+Philosopher 2 is thinking.
+[15:48:42] Philosopher 1 start eating.
+[15:48:42] Philosopher 3 start eating.
+[15:48:44] Philosopher 1 end eating.
+[15:48:44] Philosopher 0 start eating.
+[15:48:44] Philosopher 3 end eating.
+[15:48:44] Philosopher 2 start eating.
+[15:48:49] Philosopher 0 end eating.
+[15:48:49] Philosopher 4 start eating.
+[15:48:49] Philosopher 2 end eating.
+[15:48:51] Philosopher 4 end eating.
