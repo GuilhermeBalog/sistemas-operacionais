@@ -20,3 +20,9 @@ Para compilar basta executor o seguinte comando:
 
 E para executar basta executar o seguinte comando:
 `./a`
+
+# Referências
+
+- [W7 L1 Dining Philosophers Problem](https://www.youtube.com/watch?v=dOVdsd31WNg)
+- Fundamentos de Sistemas Operacionais by Abraham Silberschatz, Peter Baer Galvin, Greg Gagne.
+- [Dining Philosophers Problem with solution](https://www.youtube.com/watch?v=NbwbQQB7xNQ)
