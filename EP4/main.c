@@ -4,7 +4,9 @@
 #include <string.h>
 #include <unistd.h>
 
-pthread_t threadId[5];
+struct tm *data_hora_atual;
+
+pthread_t thread_ids[5];
 pthread_mutex_t forks_mutex[5];
 pthread_attr_t attribute;
 
@@ -12,13 +14,6 @@ void wait()
 {
     srand(time(NULL));
     int number_of_seconds = rand() % ((5 + 2) - 1) + 2;
-
-    // int milli_seconds = 1000 * number_of_seconds;
-    // clock_t start_time = clock();
-    // while (clock() < start_time + milli_seconds)
-    // {
-    // };
-    // printf("sleeping from %d seconds...", number_of_seconds);
     sleep(number_of_seconds);
 }
 
@@ -28,21 +23,19 @@ void think(int i)
     wait();
 }
 
-struct tm *data_hora_atual;
-
 void eat(int i)
 {
-    time_t rawtime;
-    struct tm *timeinfo;
+    time_t raw_time;
+    struct tm *time_info;
 
-    time(&rawtime);
-    data_hora_atual = localtime(&rawtime);
+    time(&raw_time);
+    data_hora_atual = localtime(&raw_time);
     printf("[%d:%d:%d] Philosopher %d start eating.\n", data_hora_atual->tm_hour, data_hora_atual->tm_min, data_hora_atual->tm_sec, i);
 
     wait();
 
-    time(&rawtime);
-    data_hora_atual = localtime(&rawtime);
+    time(&raw_time);
+    data_hora_atual = localtime(&raw_time);
     printf("[%d:%d:%d] Philosopher %d end eating.\n", data_hora_atual->tm_hour, data_hora_atual->tm_min, data_hora_atual->tm_sec, i);
 }
 
@@ -72,11 +65,11 @@ void *philosopher(void *philosopher_id)
 
 int main(void)
 {
-    int philosopher_id[5];
+    int philosopher_ids[5];
 
     for (int i = 0; i < 5; i++)
     {
-        philosopher_id[i] = i;
+        philosopher_ids[i] = i;
         pthread_mutex_init(&forks_mutex[i], NULL);
     }
 
@@ -86,12 +79,12 @@ int main(void)
 
     for (int i = 0; i < 5; i++)
     {
-        pthread_create(&threadId[i], &attribute, philosopher, (void *)philosopher_id[i]);
+        pthread_create(&thread_ids[i], &attribute, philosopher, (void *)philosopher_ids[i]);
     }
 
     for (int i = 0; i < 5; i++)
     {
-        pthread_join(threadId[i], NULL);
+        pthread_join(thread_ids[i], NULL);
     }
 
     for (int i = 0; i < 5; i++)
